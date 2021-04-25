@@ -1,0 +1,68 @@
+.container {
+  border: 3px solid rgb(133, 204, 171);
+  margin: 20px;
+  padding: 20px;
+}
+
+#header {
+  border: 4px solid rgb(174, 120, 245);
+  background-color: rgb(248, 242, 255);
+  color: rgb(0, 156, 83);
+}
+
+#btn1:hover {
+  border: 1px solid blue;
+  background-color: blue;
+  color: yellow;
+}
+
+li:first-child {
+  color: slateblue;
+}
+
+li:nth-child(3) {
+  color: lightblue;
+}
+
+li:last-child {
+  color: goldenrod;
+}
+
+li:only-child {
+  color: rosybrown;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+h2 ~ a {
+  background-color: rgb(186, 236, 240);
+}
+
+h2 + a {
+  background-color: rgb(240, 186, 186);
+}
+
+/* select span that is a direct child of div */
+div > span {
+  background-color: DodgerBlue;
+}
+
+/* ^='xxx' : ขึ้นหน้าด้วย xxx */
+/* $='xxx' : ลงท้ายด้วย xxx */
+/* *='xxx' : contains xxx */
+img[src^='../img/'] {
+  border: 10px solid blueviolet;
+  width: 100px;
+  height: 100px;
+}
+
+img[class|='img-outsrc'] {
+  width: 100%;
+  height: 100%;
+}
